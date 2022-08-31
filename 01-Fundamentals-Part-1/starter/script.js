@@ -262,7 +262,6 @@ if (height) {
 } else {
   console.log("Height is UNDEFINED");
 }
-*/
 
 const age = "18";
 if (age === 18) console.log("You just became and adult (Strict)");
@@ -277,13 +276,37 @@ console.log(typeof favourite);
 // }
 
 if (favourite === 23) {
-  console.log("Cool! 23 is an amazing number!");
+    console.log("Cool! 23 is an amazing number!");
 } else if (favourite === 7) {
-  console.log("7 is also a cool number");
+    console.log("7 is also a cool number");
 } else if (favourite === 9) {
-  console.log("9 is also a cool number");
+    console.log("9 is also a cool number");
 } else {
-  console.log("Number is not 23 or 7");
+    console.log("Number is not 23 or 7");
 }
 
 if (favourite !== 23) console.log("Why not 23?");
+*/
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Some else shound drive...");
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Some else shound drive...");
+}
