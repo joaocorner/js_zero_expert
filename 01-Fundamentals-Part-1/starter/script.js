@@ -357,6 +357,7 @@ if (avgDolphins > avgKoalas && avgDolphins >= 100) {
   console.log("No team wins the trophy!");
 }*/
 
+/*
 const day = "monday";
 
 switch (day) {
@@ -396,3 +397,17 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day!");
 }
+*/
+
+//examples of expressions
+3 + 4;
+1991;
+true && false && false;
+
+//this whole line of code is a statement
+if (23 > 10) {
+  const str = "23 is bigger"; //'23 is bigger' is the value, the expression
+}
+
+console.log(`I'm ${2037 - 1991} years old.`);
+//I can't write a statement inside an template literals
