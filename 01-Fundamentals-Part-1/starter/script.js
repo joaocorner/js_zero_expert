@@ -237,7 +237,7 @@ n = n - 1;
 console.log(n);
 console.log(2 + 3 + 4 + "5");
 console.log("10" - "4" - "3" - 2 + "5");
-*/
+
 
 // 5 falsy value: 0, '', undefined, null, NaN
 
@@ -262,3 +262,28 @@ if (height) {
 } else {
   console.log("Height is UNDEFINED");
 }
+*/
+
+const age = "18";
+if (age === 18) console.log("You just became and adult (Strict)");
+
+if (age == 18) console.log("You just became and adult (loose)");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(typeof favourite);
+
+// if (favourite == 23) { // '23' == 23
+//   console.log("Cool! 23 is an amazing number!");
+// }
+
+if (favourite === 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7");
+}
+
+if (favourite !== 23) console.log("Why not 23?");
