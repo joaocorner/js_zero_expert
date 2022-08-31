@@ -397,7 +397,6 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day!");
 }
-*/
 
 //examples of expressions
 3 + 4;
@@ -411,3 +410,22 @@ if (23 > 10) {
 
 console.log(`I'm ${2037 - 1991} years old.`);
 //I can't write a statement inside an template literals
+
+*/
+
+const age = 23;
+// age >= 18  ? console.log("I like to drink wine 🍷") : console.log("I like to drink water 💧");
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💧";
+}
+console.log(drink2);
+
+// in this case I can put the condition inside the ${} because its an operator
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
